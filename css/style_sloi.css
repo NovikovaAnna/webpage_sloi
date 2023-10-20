@@ -1,0 +1,70 @@
+/* styles.css */
+.header {
+    background-color: rgba(166, 162, 162, 0.96);
+    color: #fff;
+    padding: 10px;
+}
+
+.horizontal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.horizontal-menu li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    background-image: url('../img/horizontal_image.jpg'); /* Горизонтальная картинка */
+    background-size: cover; /* Растягиваем изображение на всю ширину и высоту элемента */
+    background-repeat: no-repeat; /* Запрещаем повтор изображения */
+    height: 90px; /* Указываем высоту элемента (подстройте под ваши нужды) */
+}
+
+.vertical-menu {
+    margin-top: 30px;
+    background-image: url('../img/sloi.png');
+    background-repeat: no-repeat;
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.vertical-menu li {
+    position: relative;
+}
+
+.vertical-menu li a {
+    text-decoration: none;
+    color: rgba(166, 162, 162, 0.96);
+    display: inline-block;
+}
+
+.vertical-menu li a:hover::before {
+    content: url('../img/str.png');
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.vertical-menu li a:hover::before {
+    opacity: 2;
+}
+
+
+
